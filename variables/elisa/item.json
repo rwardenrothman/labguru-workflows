@@ -1,0 +1,19 @@
+{
+    "SC1_max": "1000",
+    "SC1_diln": "2",
+    "SC1_points": "7",
+    "SC2_max": "",
+    "SC2_diln": "",
+    "SC2_points": "",
+    "SC3_max": "",
+    "SC3_diln": "",
+    "SC3_points": "",
+    "dil_opt_1": "1",
+    "dil_opt_2": "10",
+    "dil_opt_3": "100",
+    "dil_opt_4": "",
+    "dil_opt_5": "",
+    "dil_opt_6": "",
+    "proteins": "",
+    "element_id": "30852"
+  }

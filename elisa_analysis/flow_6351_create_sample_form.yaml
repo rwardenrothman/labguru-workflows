@@ -1,0 +1,71 @@
+--- !ruby/object:Flow
+concise_attributes:
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: status
+  value_before_type_cast: active
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: priority
+  value_before_type_cast: sync
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: id
+  value_before_type_cast: 6351
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: title
+  value_before_type_cast: Amazing New Workflow
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: created_at
+  value_before_type_cast: 2024-05-08 14:15:51.000000000 Z
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: updated_at
+  value_before_type_cast: 2024-05-08 14:17:56.000000000 Z
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: content
+  value_before_type_cast: |
+    ---
+    step: ExternalScriptFunction
+    children: []
+    properties:
+      scripter_version: v3
+      explanation: Make Sample Form
+      lang: Python
+      code_template: none
+      code: "{{create_sample_form.py}}"
+      custom_properties: "{{create_sample_form.outputs}}"
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: webhook_id
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: trigger_key
+  value_before_type_cast: external
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: description
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: account_id
+  value_before_type_cast: 415072
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: env_name
+  value_before_type_cast: us
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: user_id
+  value_before_type_cast: 997
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: important_token
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: important_base
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: cron_line
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: mode
+  value_before_type_cast: workflow
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: flow_template_guid
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: tags
+  value_before_type_cast: ''
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: deleted_at
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: flow_runs_count
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: last_flow_run_created_at
+new_record: false
+active_record_yaml_version: 2
