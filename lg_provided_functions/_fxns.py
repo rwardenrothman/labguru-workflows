@@ -13,6 +13,7 @@ def token():
 
 def _get_json_path(var_name: str) -> Path:
     var_path = Path(os.environ['VAR_PATH'])
+    var_path.mkdir(parents=True, exist_ok=True)
     json_path = var_path / f'{var_name}.json'
     return json_path
 

@@ -1,0 +1,79 @@
+--- !ruby/object:Flow
+concise_attributes:
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: status
+  value_before_type_cast: active
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: priority
+  value_before_type_cast: sync
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: id
+  value_before_type_cast: 6477
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: title
+  value_before_type_cast: Notify User
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: created_at
+  value_before_type_cast: 2024-05-23 19:59:16.000000000 Z
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: updated_at
+  value_before_type_cast: 2024-05-23 20:01:10.000000000 Z
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: content
+  value_before_type_cast: |
+    ---
+    step: ExternalScriptFunction
+    children:
+    - step: ShowData
+      children: []
+    properties:
+      scripter_version: v3
+      explanation: Send Notification
+      lang: Python
+      code_template: none
+      code: "{{send_notification.py}}"
+      custom_properties: "{{send_notification.outputs}}"
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: webhook_id
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: trigger_key
+  value_before_type_cast: external
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: description
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: account_id
+  value_before_type_cast: 415072
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: env_name
+  value_before_type_cast: us
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: user_id
+  value_before_type_cast: 997
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: important_token
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: important_base
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: cron_line
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: mode
+  value_before_type_cast: workflow
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: flow_template_guid
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: tags
+  value_before_type_cast: ''
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: deleted_at
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: flow_runs_count
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: last_flow_run_created_at
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: locked_by_flow_run
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: locked_at
+- !ruby/object:ActiveModel::Attribute::FromDatabase
+  name: searchable_content
+new_record: false
+active_record_yaml_version: 2
