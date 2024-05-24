@@ -26,10 +26,11 @@ def make_yaml(fpath: str):
             stored_variables = output_regex.findall(file_text)
             template_str = template_str.replace(outputs_variable, ', '.join(stored_variables))
 
-    print(template_str)
-
     outfile = output_folder / (template_path.stem + datetime.now().strftime('_%Y%m%d_%H%M%S.yaml'))
     outfile.write_text(template_str)
+
+    print(f'Output YAML written to: {outfile}')
+    print(f'It should be uploaded to: https://us-flowguru.labguru.com/flows/6477/edit')
 
 
 if __name__ == '__main__':
