@@ -75,6 +75,7 @@ def get_well_dict():
 
 
 submitted_info = variable('item')
+replicates = int(submitted_info['replicates'])
 element_data = requests.get(f"{base()}/api/v1/elements/{submitted_info['element_id']}?token={token()}").json()
 store_variable('element', element_data)
 
@@ -98,7 +99,9 @@ for cur_sample_key, cur_sc_key in product(sample_keys, sc_items.keys()):
             if f'{cur_sample_key}_{cur_diln_key}' in checked_boxes:
                 needed_wells.append((cur_sample_key, cur_diln_key, cur_sc_key))
 
-if len(needed_wells) + sc_count > 384:
+if len(needed_wells) + sc_count > 384/replicates:
     print('oh no!')
     exit()
+
+
 
