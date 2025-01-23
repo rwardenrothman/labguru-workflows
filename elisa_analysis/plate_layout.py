@@ -8,11 +8,8 @@ from typing import List
 import pandas as pd
 import requests
 
-if os.environ.get('IS_LOCAL', False):
-    from lg_provided_functions import base, token, variable, store_variable
-    DEBUG = True
-else:
-    DEBUG = False
+from lg_provided_functions import base, token, variable, store_variable, DEBUG
+from lg_provided_functions.Custom import notify_user
 
 
 @dataclass
